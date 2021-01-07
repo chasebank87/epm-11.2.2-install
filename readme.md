@@ -23,4 +23,11 @@
     ![](./assets/images/rcuRun.gif)
 3. Enter connection information for your SQL\Oracle DB server. The user used must be a system admin.
    
-   ![](./assets/images/rcuRun.gif)
+   ![](./assets/images/rcuConnection.gif)
+4. Select required components, and set the schema password.
+
+    ![](./assets/images/rcuComponents.gif)
+5. Confirm all schemas were created successfully
+
+    ![](./assets/images/rcuSuccess.png)
+    
