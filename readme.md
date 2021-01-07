@@ -22,12 +22,26 @@
 
     ![](./assets/images/rcuRun.gif)
 3. Enter connection information for your SQL\Oracle DB server. The user used must be a system admin.
+
+> I am using localhost because this is a demo server but you will need to use a FQDN for your connection info, escpecially if you are running a distributed environment.
    
    ![](./assets/images/rcuConnection.gif)
 4. Select required components, and set the schema password.
 
     ![](./assets/images/rcuComponents.gif)
-5. Confirm all schemas were created successfully
+5. Confirm all schemas were created successfully.
 
     ![](./assets/images/rcuSuccess.png)
+6. Edit the following file to include the informatin used when creating the infrastructure schemas:
+    * D:\Oracle\Middleware\EPMSystem11R1\common\config\11.1.2.0\RCUSchema.properties
+
+> This file will need to be created on every server in the environment before starting the configurator. This file cannot just be pasted due to password encryption.
     
+    ![](./assets/images/rcuProperty.gif)
+
+    ![](./assets/images/rcuPropertyEdit.gif)
+
+7. Run the EPM configuration by running the following bat file as administrator:
+      * D:\Oracle\Middleware\EPMSystem11R1\common\config\11.1.2.0\configtool.bat
+
+      ![](./assets/images/configRun.gif)
