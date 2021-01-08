@@ -31,7 +31,7 @@
 
 4. Select required components, and set the schema password.
 
-  ![](./assets/images/rcuComponents.gif)
+    ![](./assets/images/rcuComponents.gif)
 
 5. Confirm all schemas were created successfully.
 
