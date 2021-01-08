@@ -5,12 +5,14 @@
 > Install instructions have not changed since 11.1.2.4
 
 1. Download EPM 11.2.2 Install files from edelivery.oracle.com
-2. Unzip all files to a single location (The path should have no spaces)
-3. Run installTool as administrator
+2. Make sure you comply with all prerequistes like Net.Framework 3.5 and UAC being turned off. Use the following like for a full list of prerequisites: [Oracle Link](https://docs.oracle.com/en/applications/enterprise-performance-management/11.2/hitis/preparing_servers.html)
+3. Install 3rd Part Tools, Especially 7zip. Using the built in windows archive tool is not recommended.
+4. Unzip all files to a single location (The path should have no spaces)
+5. Run installTool as administrator
    
    ![](./assets/images/demoInstall.gif)
 
-4. Duplicate on the rest of the servers in your deployment. The foundation server must have all the products intended for the environment installed locally in addition to the remote server where the product will live.
+6. Duplicate on the rest of the servers in your deployment. The foundation server must have all the products intended for the environment installed locally in addition to the remote server where the product will live.
 
 ## Configuration
 
@@ -75,4 +77,9 @@
 
 12. Configure Web Server
 
-    ![](./assets/images/configFND2.gif)
+    ![](./assets/images/configWeb.gif)
+
+13. Start Services
+
+  > IMPORTANT!! At this point we would normally be done and could move on to tuning and patching, but there is a known bug with Analytic Provider Services in this version that will prevent APS from starting the next time you restart services. The issue is documented having the document id of 2693784.1. The fix for this issue is to apply a patch for APS from 11.1.2.4 (Patch 31206874: PATCHSET UPDATE: HYPERION ANALYTIC PROVIDER SERVICES 11.1.2.4.040)
+
