@@ -5,7 +5,7 @@
 > Install instructions have not changed since 11.1.2.4
 
 1. Download EPM 11.2.2 Install files from edelivery.oracle.com
-2. Make sure you comply with all prerequistes like Net.Framework 3.5 and UAC being turned off. Use the following like for a full list of prerequisites: [Oracle Link](https://docs.oracle.com/en/applications/enterprise-performance-management/11.2/hitis/preparing_servers.html)
+2. Make sure you comply with all prerequistes like Net.Framework 3.5 and UAC being turned off. Use the following link for a full list of prerequisites: [Oracle Link](https://docs.oracle.com/en/applications/enterprise-performance-management/11.2/hitis/preparing_servers.html)
 3. Install 3rd Part Tools, Especially 7zip. Using the built in windows archive tool is not recommended.
 4. Unzip all files to a single location (The path should have no spaces)
 5. Run installTool as administrator
@@ -21,7 +21,7 @@
 1. Create all necessary EPM databases including EPMS_RCU which is required for a successfull configuration. In 11.1.2.4 this was only required for certain products, but in 11.2.2 it is required for all products.
 
      * Use the following link to help with the creation of your databases: [Oracle Link](https://docs.oracle.com/en/applications/enterprise-performance-management/11.2/hitis/microsoft_sql_server_database_creation_requirements.html)
-2. Run the following rcu bat file to create the require infrastructure schemas:
+2. Run the following rcu bat file to create the required infrastructure schemas:
     * middleware home\oracle_commoon\bin\rcu.bat
 
     ![](./assets/images/rcuRun.gif)
@@ -39,7 +39,7 @@
 
     ![](./assets/images/rcuSuccess.png)
 
-6. Edit the following file to include the informatin used when creating the infrastructure schemas:
+6. Edit the following file to include the information used when creating the infrastructure schemas:
     * D:\Oracle\Middleware\EPMSystem11R1\common\config\11.1.2.0\RCUSchema.properties
 
       > IMPORTANT!! This file will need to be created on every server in the environment before starting the configurator. This file cannot just be pasted due to password encryption.
@@ -61,7 +61,7 @@
 
 9. Configure Foundation only first
 
-    > IMPORTANT!! Uncheck the deploy Java web application to a signle managed server option
+    > IMPORTANT!! Uncheck the deploy Java web application to a single managed server option
 
     ![](./assets/images/configFND.gif)
     ![](./assets/images/configFND2.gif)
